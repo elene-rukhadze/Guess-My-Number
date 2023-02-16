@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.btn {
+	font-family: "Poppins", sans-serif;
+}
+
+.icon {
+	height: 40px;
+}
+
+.top1 {
+	background-color: rgba(66, 141, 255);
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+header {
+	background-color: rgb(66, 141, 255);
+	display: flex;
+	flex-direction: column;
+	height: 45vh;
+}
+
+header h1 {
+	align-self: center;
+	padding-bottom: 50px;
+	font-size: 50px;
+	color: rgb(230, 162, 239);
+}
+
+.between {
+	font-weight: bold;
+	color: pink;
+}
+
+.ghost {
+	height: 60px;
+	width: 60px;
+	align-self: center;
+	animation: slidein infinite 2s;
+	animation-direction: alternate;
+}
+
+@keyframes slidein {
+	from {
+		transform: translateY(0%);
+		-webkit-filter: drop-shadow(0px 5px 5px);
+		filter: drop-shadow(0px 5px 5px #f7c8e3);
+	}
+
+	to {
+		transform: translateY(50%);
+		-webkit-filter: drop-shadow(0px 10px 10px);
+		filter: drop-shadow(0px 10px 10px #e30f87);
+	}
+}
+
+.again {
+	font-size: 15px;
+	padding: 0px 30px 0px 30px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: rgba(240, 109, 230, 0.633);
+	border-radius: 10px;
+	font-weight: bold;
+	color: rgb(240, 240, 255);
+	transition: 0.6s;
+}
+
+.again:hover {
+	background-color: rgb(240, 240, 255);
+	color: rgba(240, 109, 230, 0.633);
+	transition: 0.5s ease-in-out;
+}
+
+.number {
+	position: absolute;
+	padding: 30px;
+	background-color: rgb(222, 221, 221);
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -195%);
+	border-radius: 5px;
+	border: solid 4px white;
+}
+
+.number h1 {
+	color: rgb(221, 47, 195);
+}
+
+main {
+	background-color: rgb(238, 214, 240);
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.guess {
+	width: 200px;
+	height: 150px;
+	padding-left: 50%;
+	outline: none;
+	font-style: inherit;
+	font-size: 80px;
+	color: #6b8eef;
+}
+
+.check {
+	border: none;
+	height: 70px;
+	width: 150px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #c979a6;
+	border-radius: 10px;
+}
+
+.label-score1 {
+	display: flex;
+	align-items: center;
+	height: 100px;
+	gap: 15px;
+}
+
+.label-score,
+.label-highscore {
+	font-weight: bold;
+	font-size: 30px;
+	color: rgb(16, 135, 240);
+}
+
+.message {
+	font-weight: bold;
+	font-size: 30px;
+	color: rgb(115, 89, 109);
+}
+
+.label-highscore1 {
+	display: flex;
+	align-items: center;
+	width: 250px;
+	height: 100px;
+	gap: 15px;
+}
